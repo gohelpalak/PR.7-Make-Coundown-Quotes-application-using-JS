@@ -25,19 +25,16 @@
         let decrementBtn = document.getElementById('decrement-btn');
         let resetBtn = document.querySelector('#reset');
 
-        // To increment the value of counter
+        
         incrementBtn.addEventListener('click', () => {
             counter++;
             counterValue.innerHTML = counter;
         });
-
-        // To decrement the value of counter
+       
         decrementBtn.addEventListener('click', () => {
             counter--;
             counterValue.innerHTML = counter;
         });
-
-        // To reset the counter to zero
         resetBtn.addEventListener('click', reset);
 
         function reset() {
